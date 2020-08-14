@@ -6,9 +6,8 @@ const singUp = (e) => {
   const form = e.target
   const data = {
     "email": form.email.value,
-    "username": form.nombre.value,
-    "password": form.pass.value,
-    "type": "normal"
+    "name": form.nombre.value,
+    "password": form.pass.value
   }
   const url = `${process.env.REACT_APP_URL_USER}/signup`
   Axios.post(url,data)
